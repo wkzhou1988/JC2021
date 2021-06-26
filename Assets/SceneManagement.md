@@ -2,6 +2,7 @@
 根据性能要求来确定。所有坐标落在一个网格中的渲染对象都挂在网格Root底下。镜头移动时，用射线或者自行计算坐标也可以，计算可视范围内的网格有哪些，把这些网格的
 Root设置成Active，不可见的网格Root设置成非Active。通过把场景分成网格，减少了计算可视范围时的计算量。通过控制网格大小，可以调整SetActive调用的频率。
 
+```
 using UnityEngine;
 
 public class SceneManagement : MonoBehaviour
@@ -48,3 +49,5 @@ public class SceneManagement : MonoBehaviour
         }
     }
 }
+
+```
